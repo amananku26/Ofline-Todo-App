@@ -1,0 +1,313 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user_id": "1",
+      "username": "aman",
+      "username_fullname": "Aman Anku",
+      "password": "aman",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+      "description": "Full stack Web Developer"
+    },
+    {
+      "id": 2,
+      "user_id": "2",
+      "username": "rahul",
+      "username_fullname": "Rahul Singh",
+      "password": "rahul",
+      "avatar_url": "https://cdn.pixabay.com/photo/2016/03/09/15/10/man-1246508__340.jpg",
+      "description": "Full stack Android Developer"
+    },
+    {
+      "id": 3,
+      "user_id": "3",
+      "username": "charlie",
+      "username_fullname": "Charlie Hebdo",
+      "password": "charlie",
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Fran%C3%A7ois_Cavanna.jpg/300px-Fran%C3%A7ois_Cavanna.jpg",
+      "description": "Senior Software Developer at Paypal"
+    },
+    {
+      "id": 4,
+      "user_id": "4",
+      "username": "erdo",
+      "username_fullname": "Erdogan",
+      "password": "erdo",
+      "avatar_url": "https://cdn.pixabay.com/photo/2016/11/16/19/27/brad-pitt-1829794__340.jpg",
+      "description": "NetWork Engineer at Mindtree"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Is this the future of work",
+      "time": "1d ago • 2,764 readers"
+    },
+    {
+      "id": 2,
+      "title": "The skills employer want",
+      "time": "1d ago • 4,764 readers"
+    },
+    {
+      "id": 3,
+      "title": "Stuck in Your carrier",
+      "time": "2d ago • 8,764 readers"
+    },
+    {
+      "title": "IT firm paln's for WFM",
+      "id": 4,
+      "time": "2d ago • 2,64 readers"
+    },
+    {
+      "title": "Harley-Davidson ties up with Hero",
+      "id": 5,
+      "time": "3d ago • 22,764 readers"
+    }
+  ],
+  "posts": [
+    {
+      "author_id": "1",
+      "author_name": "Aman Anku",
+      "author_username": "aman",
+      "author_title": "Hello there How are you",
+      "id": 1,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+      "imagePost": "https://cdn.pixabay.com/photo/2018/06/07/16/49/vr-3460451__340.jpg",
+      "likes": [
+        {
+          "username": "rahul",
+          "user_id": "2"
+        }
+      ],
+      "comment": [
+        {
+          "username": "erdo",
+          "imageComment": "https://cdn.pixabay.com/photo/2016/11/16/19/27/brad-pitt-1829794__340.jpg",
+          "comment_body": "Hello Aman",
+          "PostDataId": 1,
+          "id": "84edebae-126a-429f-a178-b8bf98978c1e",
+          "timestamp": "2020-11-03T13:27:39.337Z"
+        }
+      ]
+    },
+    {
+      "author_id": "1",
+      "author_name": "Aman Anku",
+      "author_username": "aman",
+      "author_title": "Benifits of optical fibers",
+      "id": 2,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+      "imagePost": "https://cdn.pixabay.com/photo/2020/02/03/00/12/fiber-4814456__340.jpg",
+      "likes": [
+        {
+          "username": "rahul",
+          "user_id": "2"
+        }
+      ],
+      "comment": []
+    },
+    {
+      "author_id": "2",
+      "author_name": "Rahul Singh",
+      "author_username": "rahul",
+      "author_title": "Time travel with quantum physics",
+      "id": 3,
+      "avatar_url": "https://cdn.pixabay.com/photo/2016/03/09/15/10/man-1246508__340.jpg",
+      "imagePost": "https://cdn.pixabay.com/photo/2017/12/26/21/19/tech-3041437__340.jpg",
+      "likes": [],
+      "comment": []
+    },
+    {
+      "author_title": "Celebrate Haloween",
+      "imagePost": "https://cdn.pixabay.com/photo/2020/10/21/19/43/jack-o-lanterns-5674148__340.jpg",
+      "author_name": "Aman Anku",
+      "author_id": "1",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+      "author_username": "aman",
+      "id": 4,
+      "likes": [
+        {
+          "username": "aman",
+          "user_id": "1"
+        }
+      ],
+      "comment": []
+    },
+    {
+      "author_title": "Is it Possible to Do Time travel?",
+      "author_name": "Aman Anku",
+      "author_id": "1",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+      "author_username": "aman",
+      "imagePost": "https://cdn.pixabay.com/photo/2020/02/11/22/40/sea-4841142__340.jpg",
+      "id": 5,
+      "likes": [
+        {
+          "username": "rahul",
+          "user_id": "2"
+        }
+      ],
+      "comment": []
+    },
+    {
+      "author_title": "hello how are you",
+      "author_name": "Erdogan",
+      "author_id": "4",
+      "author_username": "erdo",
+      "avatar_url": "https://cdn.pixabay.com/photo/2016/11/16/19/27/brad-pitt-1829794__340.jpg",
+      "imagePost": "https://cdn.pixabay.com/photo/2020/04/30/20/14/sky-5114499__340.jpg",
+      "likes": [
+        {
+          "username": "aman",
+          "user_id": "1"
+        }
+      ],
+      "comment": [],
+      "id": 6
+    },
+    {
+      "author_title": "Why ",
+      "author_name": "Charlie Hebdo",
+      "author_id": "3",
+      "author_username": "charlie",
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Fran%C3%A7ois_Cavanna.jpg/300px-Fran%C3%A7ois_Cavanna.jpg",
+      "imagePost": "https://cdn.pixabay.com/photo/2020/10/13/10/20/zebra-5651454__340.jpg",
+      "likes": [
+        {
+          "username": "aman",
+          "user_id": "1"
+        }
+      ],
+      "comment": [
+        {
+          "username": "aman",
+          "imageComment": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+          "comment_body": "black and white beauty",
+          "PostDataId": 7,
+          "id": "2bd2a3c9-c991-4642-9171-6c3d058526c1",
+          "timestamp": "2020-11-03T13:09:36.844Z"
+        },
+        {
+          "username": "aman",
+          "imageComment": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+          "comment_body": "hey Charlie looking good pic",
+          "PostDataId": 7,
+          "id": "c7d60b14-acca-4291-a88b-a2577afd54cf",
+          "timestamp": "2020-11-03T13:36:07.132Z"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "author_title": "hello dear",
+      "author_name": "Aman Anku",
+      "author_id": "1",
+      "author_username": "aman",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+      "imagePost": "https://cdn.pixabay.com/photo/2020/10/27/14/59/deer-5691010__340.jpg",
+      "likes": [
+        {
+          "username": "aman",
+          "user_id": "1"
+        },
+        {
+          "username": "erdo",
+          "user_id": "4"
+        }
+      ],
+      "comment": [
+        {
+          "username": "aman",
+          "imageComment": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+          "comment_body": "hey",
+          "PostDataId": 8,
+          "id": "58b3662b-6f6f-4b62-98b7-a156479049bb",
+          "timestamp": "2020-11-03T13:00:59.482Z"
+        },
+        {
+          "username": "aman",
+          "imageComment": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+          "comment_body": "hi",
+          "PostDataId": 8,
+          "id": "c7321579-43f3-4f6a-b39c-daca2381e4f6",
+          "timestamp": "2020-11-03T13:02:54.308Z"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "author_title": "is bitcoin safe?",
+      "author_name": "Aman Anku",
+      "author_id": "1",
+      "author_username": "aman",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+      "imagePost": "https://images.pexels.com/photos/1097946/pexels-photo-1097946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "likes": [
+        {
+          "username": "erdo",
+          "user_id": "4"
+        }
+      ],
+      "comment": [
+        {
+          "username": "erdo",
+          "imageComment": "https://cdn.pixabay.com/photo/2016/11/16/19/27/brad-pitt-1829794__340.jpg",
+          "comment_body": "Yes aman it is safe and decentralised",
+          "PostDataId": 9,
+          "id": "3ac0b168-a4fb-4c9d-a7f5-6635c7994799",
+          "timestamp": "2020-11-03T13:36:47.565Z"
+        },
+        {
+          "username": "erdo",
+          "imageComment": "https://cdn.pixabay.com/photo/2016/11/16/19/27/brad-pitt-1829794__340.jpg",
+          "comment_body": "Hey aman",
+          "PostDataId": 9,
+          "id": "d847345b-26f0-46c8-b26a-651461ef0bbd",
+          "timestamp": "2020-11-03T13:41:20.113Z"
+        },
+        {
+          "username": "aman",
+          "imageComment": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+          "comment_body": "CAN YOU TELL ME MORE ABOUT THIS",
+          "PostDataId": 9,
+          "id": "8a193f68-cf5d-4e22-9f0f-d8de037be694",
+          "timestamp": "2020-11-03T14:10:06.883Z"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "author_title": "how to store in cloud",
+      "author_name": "Erdogan",
+      "author_id": "4",
+      "author_username": "erdo",
+      "avatar_url": "https://cdn.pixabay.com/photo/2016/11/16/19/27/brad-pitt-1829794__340.jpg",
+      "imagePost": "https://cdn.pixabay.com/photo/2020/10/28/19/18/cloud-5694354__340.jpg",
+      "likes": [
+        {
+          "username": "aman",
+          "user_id": "1"
+        }
+      ],
+      "comment": [
+        {
+          "username": "rahul",
+          "imageComment": "https://cdn.pixabay.com/photo/2016/03/09/15/10/man-1246508__340.jpg",
+          "comment_body": "Can we connect on Zoom",
+          "PostDataId": 10,
+          "id": "9b82fa16-6074-48a7-9d1b-fab13d033807",
+          "timestamp": "2020-11-03T13:41:49.626Z"
+        },
+        {
+          "username": "aman",
+          "imageComment": "https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4",
+          "comment_body": "HELLO",
+          "PostDataId": 10,
+          "id": "4600b50d-8d12-45ba-bbca-7e442ab63be2",
+          "timestamp": "2020-11-03T14:02:16.892Z"
+        }
+      ],
+      "id": 10
+    }
+  ]
+}
