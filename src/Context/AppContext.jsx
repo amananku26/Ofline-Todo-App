@@ -5,11 +5,11 @@ export const AppContext = React.createContext();
 class AppContextProvider extends React.Component {
   constructor(props) {
     super(props);
-    var data1 =  localStorage.getItem("todolist")
+    var data1 = localStorage.getItem("todolist")
     this.state = {
       todo: JSON.parse(data1) || [],
-      hashtag:[],
-      set:[]
+      hashtag: [],
+      set: []
     };
   }
 
@@ -21,48 +21,31 @@ class AppContextProvider extends React.Component {
     localStorage.setItem("todolist", JSON.stringify(todoList));
   };
 
-
-  addTodo = (title,hashtag) => {
+  // add todo list
+  addTodo = (title, hashtag) => {
     let item = {
       title,
       id: uuid(),
       status: false,
-      hashtag:hashtag
+      hashtag: hashtag
     };
     this.setState({
       todo: [...this.state.todo, item]
     });
+    var data = [...this.state.todo, item]
+    localStorage.setItem("todolist", JSON.stringify(data))
 
-    for (var i = 0; i < localStorage.length; i++) {
-      var x = localStorage.key(i);
-      var hash
-      console.log(x,hashtag)
-      if( x == hashtag){
-        var p = JSON.parse(localStorage.getItem("x"))
-        hash = [...p , item]
-        return localStorage.setItem((`${hashtag}`),JSON.stringify(hash))
-
-      } else {
-        hash = [...this.state.todo, item ]
-        return localStorage.setItem((`${hashtag}`),JSON.stringify(hash))
-       
-      }
-     
-      
-    }
-    
-
-
-    var data =  [...this.state.todo, item]
-    localStorage.setItem("todolist",JSON.stringify(data))
-   
   };
+
+  // delete the selective todo list
   removeTodo = (id) => {
     let newData = this.state.todo.filter((item) => item.id !== id);
     this.updateLocalStorage(newData);
     this.updateTodo(newData);
 
   };
+
+  // this function will toggle the todo ? completed : not completed
   toggleTask = (id) => {
     let newData = this.state.todo.map((item) =>
       item.id === id ? { ...item, status: !item.status } : item
@@ -70,6 +53,8 @@ class AppContextProvider extends React.Component {
     this.updateLocalStorage(newData);
     this.updateTodo(newData);
   };
+
+  // this function will update the task
   updateTask = (id, payload) => {
     let newData = this.state.todo.map((item) =>
       item.id === id ? { ...payload } : item
@@ -79,7 +64,7 @@ class AppContextProvider extends React.Component {
   };
   render() {
     const { todo } = this.state;
-    const { addTodo, removeTodo, toggleTask, updateTask ,updateTodo } = this;
+    const { addTodo, removeTodo, toggleTask, updateTask, updateTodo } = this;
     const value = { todo, addTodo, removeTodo, toggleTask, updateTask };
     return (
       <AppContext.Provider value={value}>

@@ -5,7 +5,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import CancelIcon from '@material-ui/icons/Cancel';
 import "../styles.css"
 import "./Todo.css"
-import { TextField } from '@material-ui/core';
+import { TextField ,Typography} from '@material-ui/core';
 
 class TodoItem extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class TodoItem extends React.Component {
   render() {
     const { item, onToggle, onRemove } = this.props;
     // manage the state locally
-    const { title, status, id } = item;
+    const { title, status, id,hashtag } = item;
     const { isEdit, value } = this.state;
     // ifEdit
     // return ( <input  )
@@ -64,7 +64,14 @@ class TodoItem extends React.Component {
     }
     return (
       <div style={{ display: "flex", flexDirection: "row" }} className="completedListItem">
-        <div onClick={() => onToggle(id)} className={status ? "done" : "notdone"} style={{ flex: 1, textDecoration: "line-trough" }}>{title}</div>
+         {/* <Typography align="right"></Typography> */}
+        <div onClick={() => onToggle(id)} className={status ? "done" : "notdone"} style={{ flex: 1, 
+          textDecoration: "line-trough" }}>{title} {hashtag}
+          
+          </div>
+          <br/>
+         
+       
         <IconButton onClick={() => onRemove(id)} aria-label="delete" size="medium">
           <DeleteIcon size="medium" color="primary" />
         </IconButton>

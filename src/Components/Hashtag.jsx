@@ -6,60 +6,49 @@ class HashtagView extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: [],
-            ShowID: ""
+            hasht: ""
         }
     }
 
-     allStorage = () =>  {
+    allStorage = () => {
 
         var values = [],
             keys = Object.keys(localStorage),
             i = keys.length;
-    
-        while ( i-- ) {
-            values.push( localStorage.getItem(keys[i]) );
+
+        while (i--) {
+            values.push(localStorage.getItem(keys[i]));
         }
-    
+
         return values;
     }
 
-
-
-    componentDidMount() {
-        var items = localStorage.getItem("todolist")
-        var obj = JSON.parse(items)
+    showHashTags = (hash) => {
         this.setState({
-            data: obj
+            hasht: hash
         })
-    }
-
-    showHashTags = (id) => {
-        this.setState({
-            ShowID: id
-        })
+        console.log(hash)
     }
 
     render() {
-        // console.log(this.allStorage())
-        // console.log("hash check", this.context)
-        const { data, ShowID } = this.state
+        const {todo} = this.context
+        const { hasht } = this.state
+        console.log(hasht)
         return (
             <div>
-                {data && data.map((item) => {
+                <h6>#hashtags</h6>
+                {todo && todo.map((item) => {
                     return (
-                        <button key={item.id} onClick={() => this.showHashTags(item.id)} className="btnhash" >{item.hashtag}</button>
+                        <button key={item.id} onClick={() => this.showHashTags(item.hashtag)} className="btnhash" >{item.hashtag}</button>
                     )
                 })}
                 <div>
-                    {data && data.map((show) => {
-                        if (show.id == ShowID) {
+                    {todo && todo.filter((match)=> match.hashtag == hasht).map((show) => {
                             return (
                                 <div style={{ backgroundColor: "white" }} key={show.id}>
-                                    {show.title}
+                                    <li style={{alignText:"left"}}>{show.title}</li>
                                 </div>
                             )
-                        }
                     })}
                 </div>
             </div>
