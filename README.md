@@ -39,9 +39,9 @@ An ofline Todo App for First Round of Nation With Namo
 
  **Aman Anku**
 
-- Github: [@Mamata24](https://github.com/amananku26)
-- Twitter: [@MamataN24](https://twitter.com/amananku26)
-- Linkedin: [Mamata Nayak](https://www.linkedin.com/in/amananku26)
+- Github: [@amananku26](https://github.com/amananku26)
+- Twitter: [@amananku26](https://twitter.com/amananku26)
+- Linkedin: [Aman Anku](https://www.linkedin.com/in/amananku26)
 - Email: (amankumaranku@gmail.com)
 
 
