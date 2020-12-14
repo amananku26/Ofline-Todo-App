@@ -1,4 +1,31 @@
 {
-  "users": []
+  "lists": [
+    {
+      "title": "Do Cycling",
+      "id": "288c9fe5-1688-473c-91e0-f4d93e3366df",
+      "status": false,
+      "hashtag": []
+    },
+    {
+      "title": "Do Gym",
+      "id": "c93a1107-ef1b-4fca-bde0-e95b77bedd6c",
+      "status": false,
+      "hashtag": []
+    },
+    {
+      "title": "Aman Gupta",
+      "id": "918fc2d7-1965-4106-bcad-e9bccef45a06",
+      "status": false
+    },
+    {
+      "title": "v fcnxdl",
+      "id": "4de31ba5-0d17-4915-8fc4-a66223845fa0",
+      "status": false
+    },
+    {
+      "title": "Aman Gupta",
+      "id": "85b1baf1-38b5-49a6-b6f3-44d7f2933643",
+      "status": false
+    }
+  ]
 }
-    
