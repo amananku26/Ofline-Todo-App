@@ -1,5 +1,5 @@
 #### Ofline-Todo-App
-An ofline Todo App for First Round if Nation With Namo
+An ofline Todo App for First Round of Nation With Namo
 
 ##### Presentaion Of The Project
 
