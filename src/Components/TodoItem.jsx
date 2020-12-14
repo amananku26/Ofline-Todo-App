@@ -1,4 +1,11 @@
 import React from "react";
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
+import EditIcon from '@material-ui/icons/Edit';
+import CancelIcon from '@material-ui/icons/Cancel';
+import "../styles.css"
+import "./Todo.css"
+import { TextField } from '@material-ui/core';
 
 class TodoItem extends React.Component {
   constructor(props) {
@@ -38,35 +45,34 @@ class TodoItem extends React.Component {
     if (isEdit) {
       return (
         <div style={{ display: "flex", flexDirection: "row" }}>
-          <input
+          <TextField
             style={{ flex: 1 }}
             onChange={this.handleEdit}
             name="title"
             value={value.title}
-          ></input>
-          <input
-            onChange={this.handleEdit}
-            type="checkbox"
-            name="status"
-            style={{ flex: 1 }}
-            checked={value.status}
-          ></input>
-          <button onClick={this.handleUpdate}>UPDATE</button>
-          <button onClick={this.toggleEdit}>CANCEL</button>
+            onKeyPress={(e) => {
+              if (e.key === 'Enter') {
+                return (this.handleUpdate())
+              }
+            }}
+          />
+          <IconButton onClick={this.toggleEdit} aria-label="delete" size="medium">
+            <CancelIcon size="medium" color="primary" />
+          </IconButton>
         </div>
       );
     }
     return (
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        <div style={{ flex: 1 }}>{title}</div>
-        <div style={{ flex: 1 }}>{status ? "done" : "not done"}</div>
-        <button style={{ flex: 1 }} onClick={() => onToggle(id)}>
-          TOGGLE
-        </button>
-        <button style={{ flex: 1 }} onClick={() => onRemove(id)}>
-          REMOVE
-        </button>
-        <button onClick={this.toggleEdit}>EDIT</button>
+      <div style={{ display: "flex", flexDirection: "row" }} className="completedListItem">
+        <div onClick={() => onToggle(id)} className={status ? "done" : "notdone"} style={{ flex: 1, textDecoration: "line-trough" }}>{title}</div>
+        <IconButton onClick={() => onRemove(id)} aria-label="delete" size="medium">
+          <DeleteIcon size="medium" color="primary" />
+        </IconButton>
+        {
+          !status && <IconButton onClick={this.toggleEdit} aria-label="delete" size="medium">
+            <EditIcon size="medium" color="primary" />
+          </IconButton>
+        }
       </div>
     );
   }

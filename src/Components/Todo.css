@@ -1,0 +1,12 @@
+.completedListItem{
+    margin-top: 14px;
+    border-radius: 45px;
+    box-shadow: 6px 6px 5px grey;
+}
+.btnhash{
+    border:1px solid yellow;
+    padding: 5px;
+    border-radius: 15px;
+    background: none;
+    margin: 8px;
+}
