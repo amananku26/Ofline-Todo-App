@@ -64,7 +64,7 @@ class AppContextProvider extends React.Component {
   };
   render() {
     const { todo } = this.state;
-    const { addTodo, removeTodo, toggleTask, updateTask, updateTodo } = this;
+    const { addTodo, removeTodo, toggleTask, updateTask} = this;
     const value = { todo, addTodo, removeTodo, toggleTask, updateTask };
     return (
       <AppContext.Provider value={value}>
