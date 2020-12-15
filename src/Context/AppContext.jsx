@@ -6,10 +6,13 @@ class AppContextProvider extends React.Component {
   constructor(props) {
     super(props);
     var data1 = localStorage.getItem("todolist")
+    var fromHash = localStorage.getItem("hashtag")
+
     this.state = {
       todo: JSON.parse(data1) || [],
       hashtag: [],
-      set: []
+      set: [],
+      hashSet: JSON.parse(fromHash) || []
     };
   }
 
@@ -23,15 +26,29 @@ class AppContextProvider extends React.Component {
 
   // add todo list
   addTodo = (title, hashtag) => {
+
+    var hash = title.split(" ").filter((v) => v.startsWith("#"))
     let item = {
       title,
       id: uuid(),
       status: false,
-      hashtag: hashtag
+      hashtag: hashtag,
+      tHash:hash
+
     };
+    const {hashSet} = this.state
+  
+    console.log(hash)
     this.setState({
-      todo: [...this.state.todo, item]
+      todo: [...this.state.todo, item],
+      hashSet: [...hashSet,...hash]
     });
+    console.log("lop" , this.state.hashSet)
+    var hasgData = [...hashSet, ...hash]
+    var hashTo = localStorage.setItem("hashtag", JSON.stringify(hasgData))
+    // var fromHash = JSON.parse(localStorage.getItem("hashtag"))
+
+
     var data = [...this.state.todo, item]
     localStorage.setItem("todolist", JSON.stringify(data))
 
@@ -63,9 +80,9 @@ class AppContextProvider extends React.Component {
     this.updateTodo(newData);
   };
   render() {
-    const { todo } = this.state;
-    const { addTodo, removeTodo, toggleTask, updateTask} = this;
-    const value = { todo, addTodo, removeTodo, toggleTask, updateTask };
+    const { todo,hashSet } = this.state;
+    const { addTodo, removeTodo, toggleTask, updateTask } = this;
+    const value = { todo, addTodo, removeTodo, toggleTask, updateTask ,hashSet };
     return (
       <AppContext.Provider value={value}>
         {this.props.children}

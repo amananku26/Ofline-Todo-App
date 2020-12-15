@@ -31,25 +31,30 @@ class HashtagView extends Component {
     }
 
     render() {
-        const {todo} = this.context
+        const { todo, hashSet } = this.context
         const { hasht } = this.state
-        console.log(hasht)
+        console.log(todo)
         return (
             <div>
                 <h6>#hashtags</h6>
-                {todo && todo.map((item) => {
+                {hashSet && hashSet.filter(function (item, pos) {
+                    return hashSet.indexOf(item) == pos;
+                }).map((item) => {
                     return (
-                        <button key={item.id} onClick={() => this.showHashTags(item.hashtag)} className="btnhash" >{item.hashtag}</button>
+                        <button key={item} onClick={() => this.showHashTags(item)} className="btnhash" >{item}</button>
                     )
                 })}
                 <div>
-                    {todo && todo.filter((match)=> match.hashtag == hasht).map((show) => {
+                    {todo && todo.map((match) => match.tHash.filter((show2) => {
+                        if (show2 == hasht) {
+
                             return (
-                                <div style={{ backgroundColor: "white" }} key={show.id}>
-                                    <li style={{alignText:"left"}}>{show.title}</li>
+                                <div style={{ backgroundColor: "white" }} key={match.id}>
+                                    <li style={{ alignText: "left" }}>{match.title}</li>
                                 </div>
                             )
-                    })}
+                        }
+                    }))}
                 </div>
             </div>
         )
