@@ -44,13 +44,13 @@ class TodoInput extends React.Component {
                 required={true}
               />
 
-              
-              {/* <TextField
+
+              <TextField
                 id="outlined-basic" label="Add Todo.." variant="outlined"
                 value={text}
                 onChange={this.onChange}
                 required={true}
-              /> */}
+              />
             </form>
           </label>
         </div>
