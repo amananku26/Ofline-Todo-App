@@ -30,8 +30,8 @@ An ofline Todo App for First Round of Nation With Namo
 ![Page 2](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img2.jpg)
 ###### Completed List
 ![Page 3](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img3.jpg)
-###### Hashtag Features
-![Page 3](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img4.jpg)
+<!-- ###### Hashtag Features
+![Page 3](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img4.jpg) -->
 ###### Hashtag Features
 ![Page 3](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img5.jpg)
 ###### Mobile Responsive
