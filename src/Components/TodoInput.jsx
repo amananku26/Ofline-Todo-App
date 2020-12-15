@@ -32,17 +32,13 @@ class TodoInput extends React.Component {
           <label>
             <Typography style={{ marginTop: "25px", color: "white" }} variant="h4">Todo Web App</Typography>
             <br />
-            <form onKeyPress={(e) => {
-              if (e.key === 'Enter') {
-                return addTodo(text, hashtag)
-              }
-            }}>
-              <TextField
+            {/* <form > */}
+              {/* <TextField
                 id="outlined-basic" label="Add Hashtag.." variant="outlined"
                 value={hashtag}
                 onChange={this.onHashChange}
                 required={true}
-              />
+              /> */}
 
 
               <TextField
@@ -50,8 +46,13 @@ class TodoInput extends React.Component {
                 value={text}
                 onChange={this.onChange}
                 required={true}
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter') {
+                    return addTodo(text)
+                  }
+                }}
               />
-            </form>
+            {/* </form> */}
           </label>
         </div>
       </div>

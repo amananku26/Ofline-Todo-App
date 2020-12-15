@@ -25,14 +25,13 @@ class AppContextProvider extends React.Component {
   };
 
   // add todo list
-  addTodo = (title, hashtag) => {
+  addTodo = (title) => {
 
     var hash = title.split(" ").filter((v) => v.startsWith("#"))
     let item = {
       title,
       id: uuid(),
       status: false,
-      hashtag: hashtag,
       tHash:hash
 
     };
