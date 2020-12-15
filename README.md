@@ -16,6 +16,8 @@ An ofline Todo App for First Round of Nation With Namo
 ###### Ofline-Todo-App
 
 - User Can Add Todo List With Hashtags
+- Press Return Key to add todo in List
+- Press Return Key to update todo in List
 - Able to toggle the specific list "? done : notdone"
 - can deleted the todo list 
 - can edit the list if it is not completed
