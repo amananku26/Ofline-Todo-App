@@ -24,8 +24,8 @@ An ofline Todo App for First Round of Nation With Namo
 - uses MaterialUI for Textfield Animations
 - BackGround has Animated Linear Gradient Finish
 
-###### Home Page that take input
-![Page1](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img1.jpg)
+<!-- ###### Home Page that take input
+![Page1](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img1.jpg) -->
 ###### Upcoming List
 ![Page 2](https://github.com/amananku26/Ofline-Todo-App/blob/main/assets/img2.jpg)
 ###### Completed List
