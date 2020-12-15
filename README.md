@@ -9,7 +9,7 @@ An ofline Todo App for First Round of Nation With Namo
 
 ## Web App
 
-> [Live WEB App](https://ofline-todo.netlify.app/)
+> [Live WEB App](https://5fd88200213e5db31fb2fda4--ofline-todo.netlify.app/)
 
 
 
